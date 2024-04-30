@@ -1,0 +1,14 @@
+# Install Go
+FROM golang:latest
+
+# Install Go Task
+go install github.com/go-task/task/v3/cmd/task@latest
+
+# Install pnpm
+curl -fsSL https://get.pnpm.io/install.sh | sh
+
+# Install Node.js
+pnpm env use -g latest
+
+# Install Node.js
+nvm install 22
