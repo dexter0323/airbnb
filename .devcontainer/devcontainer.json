@@ -1,8 +1,18 @@
 {
   "name": "Airbnb Clone",
   "dockerComposeFile": "./docker-compose.yml",
-  "service": "devcontainer",
+  "service": "app",
+  "postCreateCommand": "/workspace/.devcontainer/postCreate.sh",
   "workspaceFolder": "/workspace",
   "forwardPorts": [4321, 8080],
-  "postCreateCommand": "/workspace/.devcontainer/post-create-command.sh"
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "github.copilot",
+        "github.copilot-chat",
+        "github.vscode-github-actions"
+      ]
+    }
+  }
 }

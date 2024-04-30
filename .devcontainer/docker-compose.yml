@@ -1,11 +1,8 @@
 version: '3.8'
 services:
-  devcontainer:
-  #   image: mcr.microsoft.com/vscode/devcontainers/go
-  #   volumes:
-  #     - ../api:/workspace/api
-
-  # web:
-  #   image: mcr.microsoft.com/vscode/devcontainers/typescript-node
-  #   volumes:
-  #     - ../web:/workspace/web
+  app:
+    build: 
+      context: ./
+      dockerfile: .devcontainer/Dockerfile.dev
+    volumes:
+      - .:/workspace
