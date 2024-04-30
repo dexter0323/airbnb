@@ -1,1 +1,0 @@
-# curl -f https://get.pnpm.io/v6.js | node - add --global pnpm
