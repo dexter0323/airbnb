@@ -1,0 +1,8 @@
+{
+  "name": "Airbnb Clone",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "api-web",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [4321, 8080],
+  "postCreateCommand": "/workspace/.devcontainer/post-create-command.sh"
+}
