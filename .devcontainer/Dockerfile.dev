@@ -9,6 +9,3 @@ curl -fsSL https://get.pnpm.io/install.sh | sh
 
 # Install Node.js
 pnpm env use -g latest
-
-# Install Node.js
-nvm install 22
