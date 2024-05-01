@@ -2,7 +2,7 @@
   "name": "airbnb",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
-  "postCreateCommand": "/workspace/.devcontainer/post-create.sh",
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "remoteUser": "vscode",
   "forwardPorts": [4321, 8080, 5432],
