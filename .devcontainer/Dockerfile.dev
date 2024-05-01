@@ -4,8 +4,8 @@ FROM node:latest AS node
 # Install pnpm
 RUN npm install -g pnpm
 
-# Use VS Code Dev Container image for Go as base image
+# Install Go
 FROM golang:latest AS go
 
-# Install Go Task (if needed)
+# Install Go Task
 RUN go install github.com/go-task/task/v3/cmd/task@latest
