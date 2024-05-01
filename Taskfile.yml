@@ -1,0 +1,18 @@
+version: '3'
+
+tasks:
+  web:dev:
+    cmds:
+      - cd web && npm run dev
+  web:start:
+    cmds:
+      - cd web && npm run start
+  web:build:
+    cmds:
+      - cd web && npm run build
+  web:preview:
+    cmds:
+      - cd web && npm run preview
+  web:astro:
+    cmds:
+      - cd web && npm run astro
