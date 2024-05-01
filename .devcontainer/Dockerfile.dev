@@ -1,11 +1,12 @@
-# Install Node.js
-FROM node:latest AS node
-
-# Install pnpm
-RUN npm install -g pnpm
-
-# Install Go
-FROM golang:latest AS go
+# Use VS Code Dev Container image for Go as base image
+FROM mcr.microsoft.com/vscode/devcontainers/go
 
 # Install Go Task
-RUN go install github.com/go-task/task/v3/cmd/task@latest
+# RUN go install github.com/go-task/task/v3/cmd/task@latest
+
+# # Use VS Code Dev Container image for TypeScript Node.js as base image
+# FROM mcr.microsoft.com/vscode/devcontainers/typescript-node AS node
+
+# # Install pnpm
+# RUN npm install -g pnpm
+
