@@ -3,7 +3,8 @@ version: '3'
 tasks:
   web:deps:
     cmds:
-      - cd web && pnpm install
+      - pnpm config set store-dir ~/workspaces/airbnb/web/pnpm
+      - cd web && pnpm install --force
   web:dev:
     cmds:
       - cd web && npm run dev
