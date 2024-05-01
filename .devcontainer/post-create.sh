@@ -1,3 +1,6 @@
+# Install Node.js dependencies
+task web:deps
+
 # Install zsh-syntax-highlighting
 echo "Installing zsh-syntax-highlighting..."
 sudo apt update

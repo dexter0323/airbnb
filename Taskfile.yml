@@ -1,6 +1,9 @@
 version: '3'
 
 tasks:
+  web:deps:
+    cmds:
+      - cd web && pnpm install
   web:dev:
     cmds:
       - cd web && npm run dev
