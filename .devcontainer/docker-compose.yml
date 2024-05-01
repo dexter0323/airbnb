@@ -3,6 +3,6 @@ services:
   app:
     build: 
       context: ./
-      dockerfile: .devcontainer/Dockerfile.dev
+      dockerfile: Dockerfile.dev
     volumes:
       - .:/workspace
