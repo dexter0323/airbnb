@@ -1,38 +1,39 @@
 {
-  "name": "airbnb",
-  "dockerComposeFile": "docker-compose.yml",
-  "service": "app",
-  "postCreateCommand": "bash .devcontainer/post-create.sh",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-  "remoteUser": "vscode",
-  "forwardPorts": [4321, 8080, 5432],
-  "portsAttributes": {
-    "4321": {
-      "label": "Web (astro)"
+    "name": "airbnb",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "postCreateCommand": "bash .devcontainer/post-create.sh",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "remoteUser": "vscode",
+    "forwardPorts": [4321, 8080, 5432],
+    "portsAttributes": {
+        "4321": {
+            "label": "Web (astro)"
+        },
+        "8080": {
+            "label": "Api (go)"
+        },
+        "5432": {
+            "label": "Postgres"
+        }
     },
-    "8080": {
-      "label": "Api (go)"
-    },
-    "5432": {
-      "label": "Postgres"
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "astro-build.astro-vscode",
+                "bradlc.vscode-tailwindcss",
+                "dbaeumer.vscode-eslint",
+                "redhat.vscode-yaml",
+                "esbenp.prettier-vscode",
+                "github.vscode-github-actions",
+                "github.copilot",
+                "github.copilot-chat",
+                "PKief.material-icon-theme",
+                "EditorConfig.EditorConfig"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "zsh"
+            }
+        }
     }
-  },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "astro-build.astro-vscode",
-        "bradlc.vscode-tailwindcss",
-        "dbaeumer.vscode-eslint",
-        "redhat.vscode-yaml",
-        "esbenp.prettier-vscode",
-        "github.vscode-github-actions",
-        "github.copilot",
-        "github.copilot-chat",
-        "PKief.material-icon-theme"
-      ],
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "zsh"
-      }
-    }
-  }
 }
