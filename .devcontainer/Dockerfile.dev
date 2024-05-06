@@ -1,14 +1,17 @@
 # Use VS Code Dev Container image for Go as base image
 FROM mcr.microsoft.com/vscode/devcontainers/go
 
+# Update
+RUN apt-get update
+
 # Install Go Task
 RUN go install github.com/go-task/task/v3/cmd/task@latest
 
 # Install Node.js
 ENV NODE_VERSION lts/*
 RUN curl --silent -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-RUN node -v
-RUN npm -v
 
 # Install pnpm
 RUN npm install -g pnpm@latest
+
+

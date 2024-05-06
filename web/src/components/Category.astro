@@ -1,0 +1,14 @@
+---
+import { type Category } from '../types/Category';
+
+interface Props extends Category {}
+
+const { id, name } = Astro.props;
+---
+
+<div class="flex flex-col items-center">
+  <span>
+    <img src=`images/categories/${id}.jpg` alt=`${name}` width="24" height="24" />
+  </span>
+  <span class="text-sm font-bold">{name}</span>
+</div>

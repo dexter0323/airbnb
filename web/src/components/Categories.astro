@@ -1,0 +1,59 @@
+---
+import Category from './Category.astro';
+import { type Category as CategoryType } from '../types/Category';
+
+const categories: CategoryType[] = [
+  {
+    id: 1,
+    name: 'Beachfront',
+  },
+  {
+    id: 1,
+    name: 'Beachfront',
+  },
+  {
+    id: 1,
+    name: 'Beachfront',
+  },
+  {
+    id: 1,
+    name: 'Beachfront',
+  },
+  {
+    id: 1,
+    name: 'Beachfront',
+  },
+  {
+    id: 1,
+    name: 'Beachfront',
+  },
+  {
+    id: 1,
+    name: 'Beachfront',
+  },
+  {
+    id: 1,
+    name: 'Beachfront',
+  },
+  {
+    id: 1,
+    name: 'Beachfront',
+  },
+  {
+    id: 1,
+    name: 'Beachfront',
+  },
+  {
+    id: 1,
+    name: 'Beachfront',
+  },
+  {
+    id: 1,
+    name: 'Beachfront',
+  },
+];
+---
+
+<div class="flex flex-row items-center my-4 px-6 space-x-6 overflow-x-auto">
+  {categories.map(({ id, name }) => <Category id={id} name={name} />)}
+</div>
