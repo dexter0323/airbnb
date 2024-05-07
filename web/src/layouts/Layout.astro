@@ -39,5 +39,10 @@ const { title } = Astro.props;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+  }
+  .no-scrollbar {
+    scrollbar-width: none; /* Hide scrollbar on most browsers */
+    ::-webkit-scrollbar: none; /* Hide scrollbar in Chrome, Safari, Edge, Opera  */
   }
 </style>

@@ -27,7 +27,8 @@
                 "esbenp.prettier-vscode",
                 "github.vscode-github-actions",
                 "PKief.material-icon-theme",
-                "EditorConfig.EditorConfig"
+                "EditorConfig.EditorConfig",
+                "svelte.svelte-vscode"
             ],
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "zsh"
