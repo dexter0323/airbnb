@@ -1,4 +1,3 @@
-// import {useSto} from "react";
 import { useStore } from "@nanostores/react";
 import { $categories, selectCategory } from "../stores/category";
 
