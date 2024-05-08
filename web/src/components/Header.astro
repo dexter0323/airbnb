@@ -3,7 +3,7 @@ import Categories from './Categories.tsx';
 import Searchbar from './Searchbar.astro';
 ---
 
-<header class="border-b border-solid border-slate-100 drop-shadow">
+<header class="border-b border-solid border-slate-100 drop-shadow sticky top-0 left-0 z-10 bg-white">
   <Searchbar />
   <Categories client:load />
 </header>

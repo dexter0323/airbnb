@@ -7,16 +7,16 @@ tasks:
       - cd web && pnpm install
   web:dev:
     cmds:
-      - cd web && npm run dev
+      - cd web && pnpm run dev
   web:start:
     cmds:
-      - cd web && npm run start
+      - cd web && pnpm run start
   web:build:
     cmds:
-      - cd web && npm run build
+      - cd web && pnpm run build
   web:preview:
     cmds:
-      - cd web && npm run preview
+      - cd web && pnpm run preview
   web:astro:
     cmds:
-      - cd web && npm run astro
+      - cd web && pnpm run astro
