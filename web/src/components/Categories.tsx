@@ -1,7 +1,7 @@
 import { useStore } from "@nanostores/react";
 import { $categories, selectCategory } from "../stores/category";
 
-const Categories = () => {
+export default function Categories() {
   const categories = useStore($categories);
   return (
     <div className="flex flex-row items-center mt-6 px-6 space-x-6 gap-x-3 overflow-x-auto no-scrollbar">
@@ -23,6 +23,4 @@ const Categories = () => {
       })}
     </div>
   );
-};
-
-export default Categories;
+}

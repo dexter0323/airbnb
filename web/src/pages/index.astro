@@ -1,8 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Slideshow from '../components/Swiper.tsx';
 ---
 
 <Layout title="airbnb">
+  <!-- TODO: fix header stay on top -->
   <Header />
+  <Slideshow client:idle />
+  <Slideshow client:idle />
+  <Slideshow client:idle />
 </Layout>
