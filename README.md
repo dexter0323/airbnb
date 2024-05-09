@@ -45,7 +45,7 @@ VS Code Dev Containers provide a fully configured development environment withou
 2. After cloning the project, open the project folder in VS Code. 
 
 ```bash
-git clone https://github.com/yourusername/airbnb-clone.git
+git clone https://github.com/dexter0323/airbnb.git
 cd airbnb-clone
 code .
 ```
