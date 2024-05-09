@@ -46,7 +46,7 @@ VS Code Dev Containers provide a fully configured development environment withou
 
 ```bash
 git clone https://github.com/dexter0323/airbnb.git
-cd airbnb-clone
+cd airbnb
 code .
 ```
 
