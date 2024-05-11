@@ -4,7 +4,7 @@ This project is a clone of the popular vacation rental platform, Airbnb. It is c
 
 ## Frontend
 
-The frontend of this application is built using [Astro.js](https://astro.build/). Astro.js is a front-end framework that allows you to build faster, modern websites with less client-side JavaScript.
+The frontend of this application is built using [Astro.js](https://astro.build/) + [React](https://react.dev/) + [Tailwind CSS](https://tailwindcss.com/). Astro.js is a front-end framework that allows you to build faster, modern websites with less client-side JavaScript.
 
 ## Backend
 
