@@ -17,8 +17,8 @@ The backend of this application is built using [Golang](https://golang.org/), al
 To get started with this project, clone the repository and install the necessary dependencies.
 
 ```bash
-git clone https://github.com/yourusername/airbnb-clone.git
-cd airbnb-clone
+git clone https://github.com/yourusername/airbnb.git
+cd airbnb
 ```
 
 ### 2. Docker Desktop
